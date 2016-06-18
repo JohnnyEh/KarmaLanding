@@ -1,1 +1,37 @@
 /*Stylesheet for KarmaLanding.html*/
+body {
+	background-color: lightgray;
+}
+
+.navbar {
+	background-color: #fff;
+	width: 970px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.content {
+	padding: 0px 15px;
+}
+
+.navlogo {
+	position: relative;
+	width: 26px;
+	height: 70px;
+	margin-right: 10em;
+	float: left;
+}
+
+.navmenu > li {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+section,
+footer {
+	border: 1px solid chocolate;
+}
