@@ -13,10 +13,12 @@ body {
 }
 
 .top-navigation {
+	position: fixed;
 	background-color: #fff;
-	width: 100rem;
+	width: 100%;
 	height: 4.375rem;
 	margin: 0 0;
+	z-index: 9999;
 }
 
 .content {
@@ -51,10 +53,19 @@ body {
 	float: left;
 }
 
-.links > li {
+.links > li,
+.devices > li {
 	text-align: center;
 	display: inline-block;
 	margin-left: 1.563rem;	
+}
+
+.cases .devices {
+	box-sizing: border-box;
+	width: 33.3333333%;
+	display: inline-block;
+	border: 1px solid black;
+	height: 4em;
 }
 
 section {
