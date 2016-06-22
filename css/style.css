@@ -64,10 +64,10 @@ img {
 	margin-left: 1.563rem;	
 }
 
-.devices, 
-.caption, {
-	width: 33.33333%;
+.cases .devices {
+	width: 30%;
 	display: inline-block;
+	border: 1px solid black;
 	box-sizing: border-box;
 	height: 4em;
 }
@@ -138,9 +138,12 @@ button:hover {
 .caption > h3 {
 	font-weight: 400;
 	font-size: 1.563rem;
-	width: 33.33333%;
 	color: #000;
 	margin: 2.5rem 0px 1.875rem;
+}
+
+.lists {
+	width: 100%;
 }
 
 h2 {
