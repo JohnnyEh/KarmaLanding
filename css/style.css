@@ -3,15 +3,16 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
 	background-color: lightgray;
 	font-family: 'Roboto', sans-serif;
 }
 
+div {
+	border: 1px solid chocolate;
+}
+
+/*Navigation Section*/
 .top-navigation {
 	position: fixed;
 	background-color: #fff;
@@ -21,12 +22,15 @@ body {
 	z-index: 9999;
 }
 
+img {
+	box-sizing: border-box;
+}
+
 .content {
 	min-width: 37.5rem;
 	height: 70px;
 	margin: 0 315px 0 315px;
 	padding: 0 15px;
-	box-sizing: inherit;
 }
 
 .top-navigation .links {
@@ -47,24 +51,24 @@ body {
 	cursor: pointer;
 	color: #333333;
 }
+
 .logo {
 	width: 26px;
 	height: 70px;
 	float: left;
 }
 
-.links > li,
-.devices > li {
+.links > li {
 	text-align: center;
 	display: inline-block;
 	margin-left: 1.563rem;	
 }
 
-.cases .devices {
-	box-sizing: border-box;
-	width: 33.3333333%;
+.devices, 
+.caption, {
+	width: 33.33333%;
 	display: inline-block;
-	border: 1px solid black;
+	box-sizing: border-box;
 	height: 4em;
 }
 
@@ -75,16 +79,15 @@ section {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    box-sizing: border-box;
 }
 
 .introduction {
-	background-image: url('../images/karma-background.jpg');
+	background-image: url('../Images/karma-background.jpg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 41rem;
-	overflow: auto;
+	overflow: none;
 }
 
 .introduction h1 {
@@ -125,6 +128,27 @@ button:hover {
 	cursor: pointer;
 	background-color: #C94B22;
 }
+
+.cases {
+	background-color: #fff;
+	margin-top: 580px;
+	height: 525px;
+}
+
+.caption > h3 {
+	font-weight: 400;
+	font-size: 1.563rem;
+	width: 33.33333%;
+	color: #000;
+	margin: 2.5rem 0px 1.875rem;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 2.75rem;
+}
+
 section,
 footer {
 
