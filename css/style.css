@@ -3,34 +3,43 @@ html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
 	background-color: lightgray;
 	font-family: 'Roboto', sans-serif;
 }
 
 div {
-	border: 1px solid chocolate;
+	border: 1px solid transparent;
+}
+
+.content {
+	min-width: 37.5rem;
+	margin: 0 auto;
+	padding: 0 .9375rem;
+	box-sizing: border-box;
 }
 
 /*Navigation Section*/
+
 .top-navigation {
 	position: fixed;
 	background-color: #fff;
 	width: 100%;
 	height: 4.375rem;
-	margin: 0 0;
+	margin: 0 auto;
 	z-index: 9999;
+	border-bottom: 1px solid lightgray;
 }
 
-img {
-	box-sizing: border-box;
-}
-
-.content {
-	min-width: 37.5rem;
-	height: 70px;
-	margin: 0 315px 0 315px;
-	padding: 0 15px;
+.logo {
+	width: 1.625rem;
+	height: 4.375rem;
+	float: left;
+	margin-left: 19.69rem;
 }
 
 .top-navigation .links {
@@ -40,9 +49,16 @@ img {
 	color: #838994;
 	letter-spacing: 0.03em;
 	-webkit-font-smoothing: antialiased;
+	margin-right: 19.69rem;
 }
 
-.top-navigation .links .active {
+.links > li {
+	text-align: center;
+	display: inline-block;
+	margin-left: 1.563rem;	
+}
+
+.top-navigation .links .active{
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -52,46 +68,18 @@ img {
 	color: #333333;
 }
 
-.logo {
-	width: 26px;
-	height: 70px;
-	float: left;
-}
-
-.links > li {
-	text-align: center;
-	display: inline-block;
-	margin-left: 1.563rem;	
-}
-
-.cases .devices {
-	width: 30%;
-	display: inline-block;
-	border: 1px solid black;
-	box-sizing: border-box;
-	height: 4em;
-}
-
-section {
-	margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
+/*Introduction Section*/
 .introduction {
 	background-image: url('../Images/karma-background.jpg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 41rem;
+	height: 45.938rem;
 	overflow: none;
 }
 
 .introduction h1 {
-	margin-top: 13rem;
+	margin-top: 17.5rem;
 	font-size: 3.125rem;
 	margin-bottom: 0;
 }
@@ -109,7 +97,7 @@ section {
 	font-weight: 300;
 }
 
-button{
+button {
 	width: 9.688rem;
 	background-color: #f15a29;
 	border-color: #f15a29;
@@ -129,30 +117,71 @@ button:hover {
 	background-color: #C94B22;
 }
 
+/*Cases Secion*/
 .cases {
 	background-color: #fff;
-	margin-top: 580px;
-	height: 525px;
+}
+
+.cases .devices {
+    width: 33%;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 4em;
+    text-align: center;
 }
 
 .caption > h3 {
 	font-weight: 400;
 	font-size: 1.563rem;
-	color: #000;
-	margin: 2.5rem 0px 1.875rem;
+	margin: 1.9rem 0 1.875rem;
 }
 
 .lists {
-	width: 100%;
+	width: 51rem;
+	height: 19rem;
+	padding: 0 0;
+	margin: 0 auto;
 }
 
 h2 {
+	margin: 7.75rem 0 3.125rem;
 	text-align: center;
 	font-weight: 300;
 	font-size: 2.75rem;
 }
 
-section,
+/*Social Media Footer*/
 footer {
+	background-color: #fff;
+	text-align: center;
+	padding: 0 0 8rem 0;
+}
 
+.social hr {
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.313rem 20rem;
+}
+
+.icons {
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+.social .icons li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+    color: #55aace;
+}
+
+.social .copy {
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #838994;
 }
